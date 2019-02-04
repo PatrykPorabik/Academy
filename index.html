@@ -7,14 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code Academy</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="assets2/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
-        <img class="header__logo" src="/assets2/logo.jpg" alt="Code Academy Logo">
-        <nav class="header__nav">
-            <button class="btn__menu--open">menu</button>
+        <img class="header__logo" src="assets2/logo.jpg" alt="Code Academy Logo">
+        <nav class="nav">
+            <button class="nav__btn">menu</button>
             <ul class="nav__ul">
                 <li class="nav__item--bigger"><a href="#">Zaloguj</a></li>
                 <li class="nav__item"><a href="#">Wyzwania</a></li>
@@ -27,26 +28,30 @@
         </nav>
     </header>
     <main class="tasks">
-        <h2 class="tasks__title">Podejmij wyzwanie</h>
-            <section class="checkbox">
-                <h3 class="checkbox__subtitle">Home Page #2</h3>
-                <div class="checkbox__container">
-                    <label for="checkbox__label">Header</label>
-                    <input class="checkbox__input" type="checkbox">
-                </div>
-                <div class="checkbox__container">
-                    <label for="checkbox__label--white">Section</label>
-                    <input class="checkbox__input" type="checkbox">
-                </div>
-                <div class="checkbox__container">
-                    <label for="checkbox__label">Javascript</label>
-                    <input class="checkbox__input" type="checkbox">
-                </div>
-            </section>
-            <section class="timer">
-                <span class="timer__title">Do końca zostało:</span>
-                <!-- TODO JS Timer -->
-            </section>
+        <h2 class="tasks__title">Podejmij wyzwanie</h2>
+        <section class="checkbox">
+            <h3 class="checkbox__subtitle">Home Page #2</h3>
+            <div class="checkbox__container">
+                <input class="checkbox__input" type="checkbox" id="headerTask">
+                <label class="checkbox__label" for="headerTask">Header
+                </label>
+                <div class="overlay"></div>
+            </div>
+            <div class="checkbox__container checkbox__container--blue">
+                <input class="checkbox__input" type="checkbox" id="sectionTask">
+                <label class="checkbox__label--white" for="sectionTask">Section
+                </label>
+            </div>
+            <div class="checkbox__container">
+                <input class="checkbox__input" type="checkbox" id="javascriptTask">
+                <label class="checkbox__label" for="javascriptTask">Javascript
+                </label>
+            </div>
+        </section>
+        <section class="timer">
+            <span class="timer__title">Do końca zostało:</span>
+            <!-- TODO JS Timer -->
+        </section>
     </main>
 </body>
 

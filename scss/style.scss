@@ -1,0 +1,18 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $secondary-color;
+    color: $main-color;
+    font: normal 16px 'Roboto';
+    margin: 0 10px;
+    text-align: center;
+}
+
+@import 'header';
+@import 'main';
